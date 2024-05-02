@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage von Ralf Böden</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <section id="home">
+            <div class="header-content">
+                <h1> &#128512 Willkommen auf meiner Seite</h1>
+                <img src="./pictures/IMG-20220622-WA00016.jpg" alt="Passbild_Ralf_Böden" class="header-image">
+            </div>
+            </section>
+
+            <nav>
+                <ul>
+                    <li><a href="#home">Über mich</a></li>
+                    <li><a href="#public">Aktuelles</a></li>
+                    <li><a href="#private">Login-Bereich</a></li>
+                    <li><a href="#calendar">Kalender</a></li>
+                    <li><a href="#guestbook">Gästebuch</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="home">
+                <h2>Über mich</h2>
+                    <a href="#family" title="Meine Lieben"><img width="150" height="150" src="./pictures/IMG_20220206_194518_431.jpg" alt="Meine_Familie"></a>
+                    <a href="https://de.wikipedia.org/wiki/Deternerlehe" title="Hier wohne ich"><img width="150" height="150" src="./pictures/pexels-pixabay-33488.jpg" alt="Deternerlehe_Wikipedia"></a>
+                    <a href="#rezepte" title="Kochen"><img width="150" height="150" src="./pictures/pexels-klaus-nielsen-6287416.jpg" alt="Kochen"></a>
+                    <a href="#radtouren" title="Radfahren"><img width="150" height="150" src="./pictures/pexels-alex-dos-santos-305643819-19104994.jpg" alt="Radfahren"></a>
+                    <a href="#urlaubsvideos" title="Wandern"><img width="150" height="150" src="./pictures/20240221_130012.jpg" alt="Wandern"></a>
+            </section>
+        </div>
+
+        <div class="container">
+            <section id="public">
+                <h2>Aktuelles</h2>
+                <p>Hier erscheinen demnächst aktuelle Themen und Informationen zu bevorstehenden Ereignissen.</p><br/>
+                <ul id="mixed-list">
+                    <li><a href="#" onclick="toggleAudioControl('audio1'); return false;">09.05.2024  Vatertag</li>
+                    <li><a href="https://www.stage-entertainment.de/musicals-shows/tina-stuttgart">19.05.2024 Pfingsten</a></li>
+                    <li><a href="https://www.fortuna-baskets.de/sommer-cup/">30.05.2024  Fortuna-Baskets Sommer-CUP</a></li>
+                    <li><a href="https://viareggio.ilcarnevale.com/">2024 / 2025 Carnevale di Viareggio</a></li>
+                </ul>
+
+                <audio id="audio1" style="display: none;" controls>
+                    <source src="public/Vatertag.mp3" type="audio/mp3">
+                    <source src="public/Vatertag.mp3" type="audio/ogg">
+                    Your browser does not support the audio element. 
+                </audio>
+            </section>
+
+            <section id="urlaubsvideos">
+                <h2>Urlaub</h2>
+                <div class="video">
+                    <h3>Ligurien 2024</h3>
+                    <video width="640" height="360" controls>
+                        <source src="https://1drv.ms/v/s!AuLjEHhdZDPgg1h3Eborek0qANXj?e=QXPfH3" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <video width="640" height="360" controls>
+                        <source src="https://1drv.ms/v/s!AuLjEHhdZDPgg1lxpjlykP0M3Ew_?e=XbtlDm" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video">
+                    <h3>BB-EM 2022</h3>
+                    <iframe width="460" height="315" src="./Videos/BB_EM_2022.mp4" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <section id="radtouren">
+                <h2>Radtouren</h2>
+                <div class="tourenplanung">
+                    <h3>2024</h3>
+                    <p><img width="500" height="750" src="./public/Brandenburg_Potsdam.jpg" alt="Brandenburg - Potsdam" class="public-content">
+                        <img width="500" height="750" src="./public/Hohenwarthe_Gentin.jpg" alt="Hohenwarthe - Gentin" class="public-content"></p>       
+                </div>
+            </section>
+
+            <section id="rezepte">
+                <h2>Lieblingsrezepte</h2>
+                <div class="rezeptbuch">
+                    <div>
+                        <ul id="rezeptliste1"></ul>
+                        <h3>Einfach und lecker</h3>
+                            <li><a href="https://www.chefkoch.de/rezepte/1428851247743001/Absolut-der-beste-Sauerkrautauflauf-der-Welt.html">Sauerkrautauflauf</a></li><br>
+                            <li><a href="https://www.chefkoch.de/rezepte/2782391430408170/Kartoffel-Brokkoli-Pilzpfanne.html">Kartoffel-Brokkoli-Pilzpfanne</a></li><br>                      
+                            <li><a href="https://www.chefkoch.de/rezepte/1383051243462081/Bananenbrot.html">Bananen-Brot</a></li><br>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul id="rezeptliste2"></ul>
+                        <h3>schnelle Kleinigkeiten</h3>                     
+                            <li><a href="https://www.chefkoch.de/rezepte/2036171329920629/Blitzschnelle-Mayonnaise-in-einer-Minute.html">Mayonnaise</a></li><br>
+                            <li><a href="https://www.chefkoch.de/rezepte/232131094977348/Sauce-Hollandaise.html">Sauce-Hollandaise</a></li><br>
+                            <li><a href="https://www.chefkoch.de/rezepte/1650961272884256/Moehren-Ingwer-Suppe.html">Möhren-Ingwer-Suppe</a></li><br>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul id="rezeptliste3"></ul>
+                        <h3>italienisch</h3>
+                            <li><a href="https://www.chefkoch.de/rezepte/3413131508580098/Bruschetta-Pomodoro-San-Marzano.html">Bruschetta</a></li><br>
+                            <li><a href="https://www.chefkoch.de/rezepte/772011180069862/Die-echte-Sauce-Bolognese.html">Bolognese</a></li><br>
+                            <li><a href="https://www.chefkoch.de/rezepte/2942941446565480/Selbstgemachtes-Italienisches-Focaccia-Brot.html">Focaccia-Brot</a></li><br>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="guestbook">
+                <h2>Gästebuch</h2>
+                <form id="feedback-form" action="/feedback" method="post">
+                    <label for="name">Name :</label>
+                    <input type="text" id="name" name="name" placeholder="Max Muster" required><br>
+                
+                    <label for="email">E-Mail:</label>
+                    <input type="email" id="email" name="email" placeholder="max.muster@gmail.com" required><br>
+
+                    <label for="message">Nachricht:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" placeholder="Feedback / Kommentar" required>Bitte nichts eintragen, Funktion ist noch in Arbeit</textarea><br>
+
+                    <button type="submit">Absenden</button>
+                </form>
+            </section>
+
+            <section id="calendar">
+                <h2>Kalender</h2>
+                <div id="calendar-container"></div>
+            </section>
+        </div>
+
+        <div class="container">
+            <section id="private">
+                <h2>Login-Bereich</h2>
+                <div id="login">
+                    <input type="text" id="username" placeholder="Benutzername">
+                    <input type="password" id="password" placeholder="Passwort">
+                    <button onclick="login()">Einloggen</button>
+                </div>
+
+                <div id="private-content" style="display:none;">
+                    <a href="private.html" target="_blank">Private Inhalte</a>                      
+                </div>
+                <div id="projects" style="display:none;">
+                    <a href="">Link_zur_Seite</a>
+            </section>               
+        </div>
+    </main>
+
+    <footer>
+            <nav>
+                <ul>
+                    <li><a href="#home">Über mich</a></li>
+                    <li><a href="#public">Aktuelles</a></li>
+                    <li><a href="#private">Login-Bereich</a></li>
+                    <li><a href="#calendar">Kalender</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2024 Ralf Böden</p>
+            <p id="visitor-count">Anzahl der Besucher: <span id="count">0</span></p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>r
