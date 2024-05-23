@@ -1,0 +1,234 @@
+@media only screen and (min-width: 768px) {
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  p {
+  text-align: center;
+  margin-bottom: 30px;
+  }
+
+  form {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .input-wrapper {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  #submitField {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  #printButton {
+    background-color: #0473f3; 
+    color: white;
+    padding: 10px 20px;
+    border:black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Größere Schriftgröße */
+  }
+
+  #membership-fee table {
+    width: 95%;
+    border-collapse: collapse;
+  }
+  
+  #membership-fee th, #membership-fee td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #membership-fee th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+  
+  #membership-fee td {
+    text-align: right; /* Text rechts ausrichten */
+    padding-right: 20px; /* Platz für zweistellige Beträge */
+  }
+
+
+    .iban-input input,
+    .bic-input input {
+        width: 90%;
+        box-sizing: border-box;
+        font-family: monospace; /* Verwende eine monospace Schriftart für gleichmäßige Breite der Zeichen */
+        letter-spacing: 2px; /* Füge einen Abstand zwischen den Zeichen hinzu */
+        text-transform: uppercase; /* Konvertiere alle Buchstaben in Großbuchstaben */
+        border: 1px solid #ccc; /* Füge eine einfache Rahmenlinie hinzu */
+        padding: 5px; /* Füge etwas Innenabstand hinzu */
+    }
+
+    /* Stil für das IBAN-Feld */
+    .iban-input input {
+        width: calc(100% - 22px); /* Breite des Feldes abzüglich der 22 Kästchen */
+        letter-spacing: 8px; /* Breite der einzelnen Kästchen */
+    }
+
+    /* Stil für das BIC-Feld */
+    .bic-input input {
+        width: calc(100% - 11px); /* Breite des Feldes abzüglich der 11 Kästchen */
+        letter-spacing: 6px; /* Breite der einzelnen Kästchen */
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  p {
+    text-align: center;
+    margin-bottom: 30px;
+    }
+
+  form {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .input-wrapper {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  #submitField {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  #printButton {
+    background-color: #0473f3; 
+    color: white;
+    padding: 10px 20px;
+    border:black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Größere Schriftgröße */
+  }
+
+  #membership-fee table {
+    width: 95%;
+    border-collapse: collapse;
+  }
+  
+  #membership-fee th, #membership-fee td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #membership-fee th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+  
+  #membership-fee td {
+    text-align: right; /* Text rechts ausrichten */
+    padding-right: 20px; /* Platz für zweistellige Beträge */
+  }
+
+
+    .iban-input input,
+    .bic-input input {
+        width: 90%;
+        box-sizing: border-box;
+        font-family: monospace; /* Verwende eine monospace Schriftart für gleichmäßige Breite der Zeichen */
+        letter-spacing: 2px; /* Füge einen Abstand zwischen den Zeichen hinzu */
+        text-transform: uppercase; /* Konvertiere alle Buchstaben in Großbuchstaben */
+        border: 1px solid #ccc; /* Füge eine einfache Rahmenlinie hinzu */
+        padding: 5px; /* Füge etwas Innenabstand hinzu */
+    }
+
+    /* Stil für das IBAN-Feld */
+    .iban-input input {
+        width: calc(100% - 22px); /* Breite des Feldes abzüglich der 22 Kästchen */
+        letter-spacing: 8px; /* Breite der einzelnen Kästchen */
+    }
+
+    /* Stil für das BIC-Feld */
+    .bic-input input {
+        width: calc(100% - 11px); /* Breite des Feldes abzüglich der 11 Kästchen */
+        letter-spacing: 6px; /* Breite der einzelnen Kästchen */
+    }
+
+}

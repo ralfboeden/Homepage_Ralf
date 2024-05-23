@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Beitrittserklärung TuS Detern e.V.</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <section id="formular">  
+  
+                <h1>Beitrittserklärung zum TuS Detern e. V. von 1922</h1>
+                <form id="member-form">
+                <p>Hiermit erkläre ich meinen/unseren Eintritt in den TuS Detern e. V. von 1922. Die Satzung des Vereins erkenne/n ich/wir an.</p>
+
+                <div id="formularFields"></div>
+
+                <div id="addressFields">
+                    <label for="strasseNr">Straße / Nr.:*</label>
+                    <input type="text" id="strasseNr" name="strasseNr" required>
+
+                    <label for="plzOrt">PLZ / Ort:*</label>
+                    <input type="text" id="plzOrt" name="plzOrt" required>
+           
+                    <label for="email">E-Mail:*</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telefon">Telefon:*</label>
+                    <input type="tel" id="telefon" name="telefon">               
+   
+                </div>
+
+                <div id="membership-fee">
+                <h3>Beiträge monatlich:</h3>
+                    <table>
+                        <tr>
+                            <th>Mitglied</th>
+                            <th>Beitrag</th>
+                        </tr>
+                        <tr>
+                            <td>Erwachsene</td>
+                            <td>  9,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>Kinder / Jugendliche</td>
+                            <td>  5,00 €</td>
+                        </tr>
+                        <tr>
+                        <td>Passive Mitglieder</td>
+                            <td>  6,00 €</td>
+                        </tr>
+                        <tr>
+                         <td>Familienbeitrag</td>
+                            <td> 15,00 €</td>
+                        </tr>
+                    </table>
+                </div>
+                <p>Ich bin mit der Anmeldung einverstanden und verpflichte mich, den Beitrag für die o.a. Person/en bei Fälligkeit zu entrichten.
+                    Eine Kündigung der Mitgliedschaft ist nur schriftlich beim Vorstand des TuS Detern e.V. von 1922 möglich.</p>
+
+                    <div id="signatureField">
+                        <label for="ortDatumUnterschrift">Ort, Datum,  Unterschrift des Mitglieds oder gesetzliche/r Vertreter/in:</label>
+                        <input type="text" id="unterschrift" name="unterschrift">
+                    </div>
+
+                <p>Ich/Wir ermächtige/n den TuS Detern e.V. von 1922 widerruflich, den von mir/uns zu entrichtenden Mitgliedsbeitrag jeweils
+                    1/4- jährlich zum 15. Januar / 15. April / 15 Juli und 15. Oktober eines jeden Jahres zu Lasten meines/unseres Kontos mittels
+                    SEPA- Lastaschriftmandat (wiederkehrende Zahlung) einzuziehen.
+                    Zugleich weise/n ich/wir mein/unser Kreditinstitut an, die vom TuS Detern e.V. von 1922 auf mein/unser Konto gezogenen
+                    Lastschriften einzulösen.
+                </p>
+
+                <div class="form-row">
+                    <div class="input-wrapper iban-input">
+                      <label for="iban">IBAN:*</label>
+                      <input type="text" id="iban" name="iban" minlength="22" maxlength="22" required
+                             pattern="[DE]{2}[0-9]{20}" 
+                             placeholder="DE12 3456 7890 1234 5678 90">
+                    </div>
+                </div>
+                  
+                <div class="form-row">
+                    <div class="input-wrapper bic-input">
+                      <label for="bic">BIC:</label>
+                      <input type="text" id="bic" name="bic" minlength="8" maxlength="11" required
+                             placeholder="ABCDEFFXXX">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="input-wrapper">
+                      <label for="bankName">Name der Bank:</label>
+                      <input type="text" id="bankName" name="bankName" required>
+
+                    </div>
+                </div>
+                
+                <h3>Falls Kontoinhaber vom Antragsteller abweicht, bitte ausfüllen:</h3>
+
+                <div id="addressFields">
+       
+                    <label for="inh-name">Name:</label>
+                    <input type="text" id="inh-name" name="inh-name">
+
+                    <label for="inh-vorname">Vorname:</label>
+                    <input type="text" id="inh-vorname" name="inh-vorname">
+                 
+                    <label for="strasseNr">Straße / Nr.:</label>
+                    <input type="text" id="strasseNr" name="strasseNr">
+
+                    <label for="plzOrt">PLZ / Ort:</label>
+                    <input type="text" id="plzOrt" name="plzOrt">
+
+                </div>  
+                  
+                <p>Ich kann / wir können innerhalb von acht Wochen, beginnend mit dem Belastungsdatum, die Erstattung des
+                    belasteten Betrages verlangen. Es gelten dabei die mit meinem / unserem Kreditinstitut vereinbarten Bedingungen .</p><hr/>
+
+                <div id="submitField">
+                    <input type="button" id="printButton" value="Drucken">
+                </div>
+                            
+                </form>
+            </section>
+        </div>
+        <script src="scripts.js"></script>
+
+    </body>
+</html>
