@@ -64,7 +64,7 @@ function getMonthName(monthIndex) {
 generateCalendar();
 
 const users = [
-    { username: "Ralf", password: "Test1234" },
+    { username: "Ralf", password: "Sagebuck1570!" },
     { username: "benutzer2", password: "passwort2" }
 ];
 
@@ -112,4 +112,3 @@ function toggleAudioControl(audioId) {
         audioElement.style.display = 'block';
     }
 }
-
